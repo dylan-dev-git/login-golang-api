@@ -1,0 +1,16 @@
+.docs-sign-header {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+mat-form-field {
+  width: 200px;
+  font-size: small;
+}
+
+.submit {
+  width: 200px;
+}

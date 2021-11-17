@@ -1,0 +1,47 @@
+version: '3'
+
+services: 
+  ng12:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: web.dockerfile
+    ports: 
+      - 4200:4200
+    environment: 
+      SHELL: /bin/bash
+    volumes: 
+      - type: bind
+        source: ./web
+        target: /home/dylan
+  
+  token-api:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: token-microservice.dockerfile
+    ports: 
+      - 8501:8501
+    environment: 
+      SHELL: /bin/bash
+    volumes: 
+      - type: bind
+        source: ./token_api
+        target: /home/dylan
+  
+  login-api:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: login-microservice.dockerfile
+    ports: 
+      - 7501:7501
+    environment: 
+      SHELL: /bin/bash
+    volumes: 
+      - type: bind
+        source: ./login_api
+        target: /home/dylan

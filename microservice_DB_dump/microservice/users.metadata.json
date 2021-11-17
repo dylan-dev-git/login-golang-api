@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"microservice.users"}],"uuid":"123eaeee13db423ab83993a9f42afba1"}

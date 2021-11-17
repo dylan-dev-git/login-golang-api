@@ -1,0 +1,5 @@
+package env
+
+var JWT_ACCESS_SECRET string = "TOKENJWTASHERE"
+var API_KEY string = "TOKENAPIKEYHERE"
+var API_VALUE string = "TOKENAPIVALUEHERE"
